@@ -5,9 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+<style>
+    .first{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        padding: 10px;
+    }
+    .second{
+       display: grid;
+       grid-template-columns: 6fr 6fr;
+        padding: 10px;
+    }
+    form{
+        border: 2px solid gray;
+        padding: 20px;
+        width: 800px;
+        height: 450px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px gray;
+        
+    }
+    body{
+        padding-left: 300px;
+        padding-top: 50px;
+        }
+        .dt{
+            width: 240px;
+            height: 40px;
+            
+        }
+        .buton{
+            padding-left: -300px;
+            
+        }
+        .sec{
+            padding-right: -100px;
+        }
+        img{
+            position: relative;
+            right: 120px;
+            box-shadow: 20px 20px 60px gray;
+            border-radius: 1px;
+        }
+</style>
 <body>
-    <h2>hello i am gopal</h2>
-    <h1>HELLO  DEAR </h1>
+    <div align="center">
+        <div class="img">
+            <img src="./dw.png" width="200px" height="70px">
+        </div>
+    </div>
+    <form >
+        <font><h2>Registration हरा भरा मध्यप्रदेश</h2></font><br><br>
+      <div class="first">
+        <div>
+            <p><label for="name">Name</label></p>    
+            <input type="name" placeholder="User name" name="label-control" size="30" class="dt"> 
+        </div>
+       <div>
+        <p><label for="number">Whatsapp/Phone Number</label></p>   
+           <input type="name-nuber" placeholder="+91" name="label-control" size="30" class="dt">
+        </div>
+      </div>
+      <div class="second">
+        <div>
+            <label for="name">Place</label><br>
+            <input type="name" placeholder="Vilage/Town,dist" name="label-control" size="30" class="dt"> 
+        </div>
+        <div class="sec">
+            <label for="Gender">Gender</label><br>
+            <input type="radio" name="label-control">male
+            <input type="radio" name="label-control">Female
+        </div>
+       <div class="buton"><br><br><br><br>
+        <button class="btn btn-primary w-50">Submit</button>
+       </div>
+    </div>
+    </form>
 </body>
 </html>
