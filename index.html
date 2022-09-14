@@ -5,83 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
-<style>
-    .first{
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-        padding: 10px;
-    }
-    .second{
-       display: grid;
-       grid-template-columns: 6fr 6fr;
-        padding: 10px;
-    }
-    form{
-        border: 2px solid gray;
-        padding: 20px;
-        width: 800px;
-        height: 450px;
-        border-radius: 15px;
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <style>
+       .main{
+        border: 1px solid gray;
+        width: 280px;
+        height: 330px;
+        border-radius: 5px;
         box-shadow: 10px 10px 10px gray;
-        
-    }
-    body{
-        padding-left: 300px;
-        padding-top: 50px;
-        }
-        .dt{
-            width: 240px;
-            height: 40px;
-            
-        }
-        .buton{
-            padding-left: -300px;
-            
-        }
-        .sec{
-            padding-right: -100px;
-        }
-        img{
-            position: relative;
-            right: 120px;
-            box-shadow: 20px 20px 60px gray;
-            border-radius: 1px;
-        }
-</style>
+       }
+       .bor{
+        border: 1px solid gray;
+        width: 190px;
+        height: 40px;
+        background-color: green;
+        color: white;
+        text-align: center;
+       }
+       .put-1{
+              width: 230px;
+              height: 36px;      
+       }
+       .secondry{
+        padding-top: 15px;
+       }
+       .btn{
+            width: 230px;
+            padding-top: px;
+       }
+       .content{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-left: 500px;
+       }
+       .side-panel{
+        font-size: 20px;
+        width: 380px;
+        padding-top: 20px;
+        color: black;
+        text-shadow: 5px 5px 5px gray;
+       }
+       .last{
+        padding-left: 950px;
+       }
+       .fog-1{
+        text-decoration: none;
+       }
+       
+    </style>
+</head>
 <body>
-    <div align="center">
-        <div class="img">
-            <img src="./dw.png" width="200px" height="70px">
-        </div>
-    </div>
-    <form >
-        <font><h2>Registration हरा भरा मध्यप्रदेश</h2></font><br><br>
-      <div class="first">
-        <div>
-            <p><label for="name">Name</label></p>    
-            <input type="name" placeholder="User name" name="label-control" size="30" class="dt"> 
-        </div>
-       <div>
-        <p><label for="number">Whatsapp/Phone Number</label></p>   
-           <input type="name-nuber" placeholder="+91" name="label-control" size="30" class="dt">
-        </div>
-      </div>
-      <div class="second">
-        <div>
-            <label for="name">Place</label><br>
-            <input type="name" placeholder="Vilage/Town,dist" name="label-control" size="30" class="dt"> 
-        </div>
-        <div class="sec">
-            <label for="Gender">Gender</label><br>
-            <input type="radio" name="label-control">male
-            <input type="radio" name="label-control">Female
-        </div>
-       <div class="buton"><br><br><br><br>
-        <button class="btn btn-primary w-50">Submit</button>
-       </div>
-    </div>
-    </form>
+    <div class="content">
+         <div class="side-panel" align="center">
+             <div>
+             <p><font size="10" color="blue"><b>facebook</b></font></p>
+             <font>Connect with friends and the world around you on facebook</font>
+            </div>
+         </div>
+         <form class="main" align="center">
+            <div class="secondry">
+             <div>
+                <input class="put-1" type="email/number" name="name" placeholder="Email or Phonenumber" size="24"><br><br>
+                <input class="put-1" type="password" name="password" placeholder="password">
+             </div><p></p>
+                <div class="login">
+                    <button class="btn btn-primary">Log in</button>
+                </div>
+                <div class="fog">
+                    <a href="" class="fog-1">Forget password?</a>
+                </div><br>-------------------------------------<br><br>
+                <div class="acc" align="center">
+                    <div class="bor">Create New Account</div>
+                </div>
+            </div>
+         </form>
+         </div>
+         <div class="last">
+            <p>Create a page for a celebrity, band or business..</p>
+         </div>
+   
 </body>
 </html>
